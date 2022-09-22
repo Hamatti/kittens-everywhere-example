@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+    <style>
+        fieldset {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Do you want to see cute pictures of kittens or doggos? 
+    </p>
+    <form>
+        <fieldset>
+            <legend>Choose your animal</legend>
+            <input type="radio" id="kittens" name="animalPreference" value="kittens" />
+            <label for="kittens">Kittens</label>
+            <br>
+            <input type="radio" id="dogs" name="animalPreference" value="dogs" />
+            <label for="dogs">Dogs</label>
+        </fieldset>
+        <button type="submit">Save preferences</button>
+        
+    </form>
+
+    <script src="options.js"></script>
+</body>
+
+</html>
