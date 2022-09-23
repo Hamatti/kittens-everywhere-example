@@ -25,3 +25,10 @@ This extension is built for Firefox, using Manifest v2. To load it while in deve
 or
 
 2. Install [web-ext](https://github.com/mozilla/web-ext) from [npm](https://www.npmjs.com/) (with `npm install -g web-ext`) and run `web-ext run` in this folder. That will package the extension, open a fresh Firefox window and load the extension in. It will also provide hot reload so the extension gets reloaded everytime you save your changes.
+
+## Learn more and get involved
+
+To learn more about building browser extensions, a great place to start is [Extension Workshop](https://extensionworkshop.com/). You can also find the documentation at [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions).
+
+To get involved with the community, we have a few places where Firefox extension developers hang out. First is #addons channel in [mozilla.org Matrix server](https://wiki.mozilla.org/Matrix). Second is our [Add-on Discourse](https://discourse.mozilla.org/c/add-ons/35)
+.
