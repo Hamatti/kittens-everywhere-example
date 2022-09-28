@@ -2,6 +2,8 @@
 
 _This project was a live-coded "how to build an extension" example that I built for a class I taught in September of 2022. It's not available in addons.mozilla.org nor Chrome Web Store._
 
+_I also wrote [a tutorial in blog format](https://hamatti.org/posts/kittens-everywhere-how-to-build-a-browser-extension/) based on this class._
+
 _It's called kittens-everywhere even though it supports dogs too because the feature for dogs came later and at that point I had already fallen in love with the name._
 
 ## Functionality
