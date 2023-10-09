@@ -68,8 +68,16 @@ browser.action.onClicked.addListener(() => {
       currentWindow: true,
     })
     .then((tabs) => {
-      browser.tabs.sendMessage(tabs[0].id, {
-        action: "kittenify",
+      let permissions = {
+        permissions: ["activeTab"],
+      };
+
+      browser.permissions.contains(permissions).then((granted) => {
+        if (granted) {
+          browser.tabs.sendMessage(tabs[0].id, {
+            action: "kittenify",
+          });
+        }
       });
     });
 });
