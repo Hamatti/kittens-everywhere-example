@@ -18,13 +18,15 @@ The user can define whether they like kittens or doggos more in the extension op
 
 ### How to run
 
-This extension is built for Firefox, using Manifest v2. To load it while in development, either (I recommend #2):
+This extension is built for Firefox, using Manifest v3. To load it while in development, either (I recommend #2):
 
 1. Build a .zip file of all the files, open Firefox and head to [about:debugging](about:debugging), choose "This Firefox" and click "Load Temporary Add-on...". Then choose your .zip file. With this method, you need to create a new .zip file and click "Reload" in that page to reload the changes.
 
 or
 
 2. Install [web-ext](https://github.com/mozilla/web-ext) from [npm](https://www.npmjs.com/) (with `npm install -g web-ext`) and run `web-ext run` in this folder. That will package the extension, open a fresh Firefox window and load the extension in. It will also provide hot reload so the extension gets reloaded everytime you save your changes.
+
+Regardless of which method you use, you need a Firefox of version 109 or newer.
 
 ## Learn more and get involved
 
