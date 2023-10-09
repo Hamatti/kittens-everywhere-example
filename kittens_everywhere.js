@@ -7,6 +7,17 @@
  * why.
  */
 
+/**
+ * To run the function on a extension icon click, we listen to
+ * messages from the background script and run `kittenify` function
+ * if we get a `kittenify` action.
+ */
+browser.runtime.onMessage.addListener(function (message) {
+  if (message.action === "kittenify") {
+    kittenify();
+  }
+});
+
 // We don't want to replace tiny images since those can be used as
 // icons or in-site graphics so I picked an arbitrary size of 150x150px
 // as the minimum. To tinker with it, change this number
@@ -62,14 +73,3 @@ function kittenify() {
     });
   });
 }
-
-/**
- * To run the function on a extension icon click, we listen to
- * messages from the background script and run `kittenify` function
- * if we get a `kittenify` action.
- */
-browser.runtime.onMessage.addListener(function (message) {
-  if (message.action === "kittenify") {
-    kittenify();
-  }
-});
