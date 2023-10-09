@@ -2,7 +2,13 @@
   "name": "Kittens everywhere",
   "description": "Change images on a website into cute pictures of kitty cats - or doggos.",
   "version": "1.0.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "kittens-everywhere@your-domain",
+      "strict_min_version": "109.0"
+    }
+  },
   "icons": {
     "48": "kittens-everywhere-icon-48.png",
     "96": "kittens-everywhere-icon-96.png"
@@ -16,12 +22,12 @@
   "background": {
     "scripts": ["background.js"]
   },
-  "browser_action": {
+  "action": {
     "default_title": "Kittens everywhere"
   },
   "options_ui": {
-    "page": "options_page/options.html",
-    "browser_style": true
+    "page": "options_page/options.html"
   },
-  "permissions": ["storage"]
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"]
 }
